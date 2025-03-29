@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="c.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="screen">
+            <input type="text" id="display" disabled />
+        </div>
+
+        <div id="mbox">
+            <!-- First Row -->
+            <button class="btn operator" onclick="clearDisplay() " style="background-color: lightgray; color: black;">AC</button>
+            <button class="btn operator" onclick="appendvalue('+/-') " style="background-color: lightgray; color: black;">+/-</button>
+            <button class="btn operator" onclick="appendvalue('%')" style="background-color: lightgray; color: black;">%</button>
+            <button class="btn operator" onclick="appendvalue('/')">/</button>
+
+            <!-- Second Row -->
+            <button class="btn" onclick="appendvalue('7')">7</button>
+            <button class="btn" onclick="appendvalue('8')">8</button>
+            <button class="btn" onclick="appendvalue('9')">9</button>
+            <button class="btn operator" onclick="appendvalue('*')">*</button>
+
+            <!-- Third Row -->
+            <button class="btn" onclick="appendvalue('4')">4</button>
+            <button class="btn" onclick="appendvalue('5')">5</button>
+            <button class="btn" onclick="appendvalue('6')">6</button>
+            <button class="btn operator" onclick="appendvalue('-')">-</button>
+
+            <!-- Fourth Row -->
+            <button class="btn" onclick="appendvalue('1')">1</button>
+            <button class="btn" onclick="appendvalue('2')">2</button>
+            <button class="btn" onclick="appendvalue('3')">3</button>
+            <button class="btn operator" onclick="appendvalue('+')">+</button>
+
+            <!-- Fifth Row -->
+            <button class="btn zero" onclick="appendvalue('0')">0</button>
+            <button class="btn" onclick="appendvalue('.')">.</button>
+            <button class="btn operator" onclick="calculateresult()">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
